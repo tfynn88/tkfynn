@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="utf-8"/>
+          <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+          <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+          <script type="text/javascript" src="../js/tafari_javascript.js"></script>
+          <title>NMCEWL PODCASTS!</title>
+     </head>
+     <body>
+        <h1>NMCEWL PODCASTS!</h1>
+            <h2 id="tracks_text"></h2>
+            <p id="album_cover_text" >Click on an album cover to hear a new podcast episode!</p>
+            <h3>These episodes are edited and produced by yours truly for the New Mexico Coalition to Enhance Working Lands podcast series following the stories of small-scale ranchers to and environmental policy/coalition workers. As an Environmental sciences student, these podcast speak to my academic passions!</h3>
+
+
+     <div id="playlist_pics">
+               <a href="https://coordinatorg.podbean.com/e/ep-5-new-mexico-collaborations-patricia-dowd-of-western-landowners-alliance/"><img onmouseover="bigImg(this)" onmouseout="smallImg(this)" id="episode_1" src="ep_1.jpg" width="180" height="300">
+               <script>
+                function bigImg(x) {
+                  x.style.height = "450";
+                    x.style.width = "270";
+
+                }
+
+                function smallImg(x) {
+                  x.style.height = "300";
+                    x.style.width = "180";
+                }
+                </script>
+
+               <audio id="episode1_mp3" src="ep_1.mp3"></audio>
+               <a href="https://coordinatorg.podbean.com/e/nmcewlsummitep6/"><img id="episode_2" src="ep_2.jpg" width="180" height="300"></a>
+               <audio id="episode2_mp3" src="../audio/ep_2.mp3"></audio>
+               <a href="https://coordinatorg.podbean.com/e/ep-7-new-mexico-collaborations-commissioner-stephanie-garcia-richard/"><img id="episode_3" src="ep_3.jpg" width="180" height="300"></a>
+               <audio id="episode3_mp3" src="ep_3.mp3"></audio>
+               <a href="https://coordinatorg.podbean.com/e/ep-8-new-mexico-collaborations-toner-mitchell-and-trout-unlimited/"><img id="episode_4" src="ep_4.jpg" width="180" height="300"></a>
+               <audio id="episode4_mp3" src="ep_4.mp3"></audio>
+     </div>
+     <div id="actual_playlist">
+               <ol id="playlist">
+                    <li>Episode 1: Interview w/Patricia Dowd, Western Landowners Alliance</li>
+                    <li>Episode 2: Trees, Water, & People</li>
+                    <li>Episode 3: Interview w/Stephanie Garcia Richard, New Mexico Commissioner of Public Lands</li>
+                    <li>Episode 4: Interview w/Toner Mitchell, Trout Unlimited</li>
+               </ol>
+     </div>
+
+     <footer>
+     <h2 id="pg_3_home_button"><a href="../index.html">Back to Home</a></h2>
+     </footer>
+         </body>
+</html>

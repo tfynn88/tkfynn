@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <style type="text/css" href="../css/style.css">
+
+          @import url('https://fonts.google.com/specimen/Krona+One#standard-styles');
+
+          body{
+            font-family: 'Krona One', sans-serif;
+          }
+          .item1 { grid-area: header; }
+          .item2 {grid-area: menu; }
+          .item3 {grid-area: main; }
+          .item4 {grid-area: footer; }
+
+          .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header'
+          'menu main main main main'
+          'menu footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #456990;
+        padding: 10px;
+        height: 100%;
+      }
+
+        .grid-container > div {
+          background-color: #e4fde1;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+          /*Responsive layout - makes a one column-layout instead of two-column layout */
+          @media (max-width: 800px) {
+            .flex-container {
+              flex-direction: column;
+            }
+          }
+          /*Here we are setting the flex-box behaviours \*/
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          font-size: 18px;
+          text-align: center;
+        }
+
+        .flex-item1 {
+          background-color: #e4fde1;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .flex-item2 {
+          background-color: #456990;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .flex-item3 {
+          background-color: #e4fde1;
+          padding: 10px;
+          flex: 50%;
+        }
+
+          </style>
+        <head>
+        <body>
+          <div class="grid-container"> <!--the containing element of the content on our website-->
+            <div class="item1">Header</div>
+            <div class="item2">Menu</div>
+            <div class="item3">Main
+              <div class="flex-container">
+              <div class="flex-item1">
+	In “It's Time for Environmental Studies to Own Up to Erasing Black People”, Wanjiku Gatheru shares her experiences in environmental academia as a woman of color. She prefaces this by acknowledging the seemingly everlasting presence of white supremacy and academic elitism in the writings of renowned environmentalists such as Madison Grant and Aldo Leopold. These prominent figures in environmental studies have established a narrow and highly selective lens that dictates which ecological communities to invest in and advocate for. Gatheru mentions that following the mass slaughter of black and brown bodies throughout 2020, many environmentalists participated in virtue-signaling gestures of solidarity. The performative nature of these actions speaks to how in practice, environmental theory within higher education panders to Enlightenment-era perspectives on society, class, and race.
+              </div>
+              <div class="flex-item2">
+  "People of color experience climate grief more deeply than white people, because we are disproportionately affected by the climate crisis and have a long history of racial terror.” (Wanjiku Gatheru). According to Ashlee Cunsolo and Neville Ellis, climate grief or trauma refers to the emotional anticipation of ecological loss that will inevitably impact a given people’s culture and way of life. As Gatheru states, people of color endure a form of climate grief that intersects with systemic racial discrimination.
+              </div>
+              <div class="flex-item3">
+  An example of American environmental media construing climate devastation can be seen in the reporting of the privatization of public/federal lands. In 2017, the Trump administration began legislation to commence the sale of drilling rights in the Arctic National Wildlife Refuge. This would lead to an ecocultural disaster for the Nunamiut and Koyukon of Alaska. The migration patterns of their ancestors were dependent on the native Caribou that has grazed the lands of the Boundry Waters for over 11,000 years.
+              </div>
+              <!--back home button-->
+                      <h2 id="home_button"><a href="../index.html">Back to Home</a></h2>
+                   </body>
+              </html>

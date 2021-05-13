@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <style type="text/css" href="../css/style.css">
+
+          @import url('https://fonts.google.com/specimen/Roboto');
+
+          body{
+            font-family: 'Roboto', sans-serif;
+          }
+
+          /*Responsive layout - makes a one column-layout instead of two-column layout */
+          @media (max-width: 800px) {
+            .flex-container {
+              flex-direction: column;
+            }
+          }
+          /*Here we are setting the flex-box behaviours \*/
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          font-size: 18px;
+          text-align: center;
+        }
+
+        .flex-item1 {
+          background-color: #e4fde1;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .flex-item2 {
+          background-color: #456990;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        .flex-item3 {
+          background-color: #e4fde1;
+          padding: 10px;
+          flex: 50%;
+        }
+
+        /*desktop view css*/
+        @media screen and (max-width: 1600px){
+
+          body{
+            background-color: #18EACD;
+          }
+
+
+        }
+        /*tablet view css*/
+        @media screen and (max-width: 900px){
+
+          body{
+            background-color: #20CDB5;
+          }
+
+
+        }
+        /*mobile view css*/
+        @media screen and (max-width: 600px){
+
+          body{
+            background-color: #1BAB97;
+          }
+
+
+        }
+
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+          font-family: Roboto;
+          @import url('https://fonts.google.com/specimen/Roboto');
+
+          margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+          padding: 60px;
+          text-align: center;
+          background: #A5F6E6;
+          color: #098069;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+          display: flex;
+          background-color: #70AFFF;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+          color: white;
+          padding: 14px 20px;
+          text-decoration: none;
+          text-align: center;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+          background-color: #FCF328;
+          color: red;
+        }
+
+        /* Column container */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+          flex: 30%;
+          background-color: #FCBB60;
+          padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
+
+
+        /*Responsive layout*/
+        @media screen and (max-width: 700px) {
+          .row, .navbar {
+            flex-direction: column;
+          }
+        }
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #70AFFF;
+  max-width: 1680px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #FCF328;
+  color: red;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #FFBD38;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/*Responsive layout*/
+@media screen and (max-width: 7000px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:pink;padding:5px">
+  <h4 style="text-align:center">Introduction to Web Design and Computer Principles</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Meet the Web Designer: Tafari Fynn</h1>
+  <p>Get to know<b> me</b> through these links!</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="https://www.costarastrology.com/zodiac-signs/taurus-sign">ZODIAC SIGN</a>
+  <a href="https://www.bbg.org/">FAVE SPOT IN NYC</a>
+  <a href="https://www.instagram.com/tafari.jpeg/">INSTAGRAM</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Tafari's Stats</h2>
+    	</ul>
+    		<li>Birthday: April 26, 2001</li>
+   			 <li>Birthplace: Brooklyn, New York</li>
+  			  <li>Favorite Color: Green!</li>
+  			  <li>Favorite Animal: Rhinoceros Beetle</li>
+  			  <li>Favorite Film: Coraline</li>
+  			  <li>Favorite Ice Cream: Mint Chocolate Chip</li>
+   			  <li>Favorite Song ATM:<a href="https://www.youtube.com/watch?v=FBM4cdml6Qs"> "Gravity" by Brent Faiyaz</a></li>
+         </ul>
+    </div>
+    <div><img src="pretty.png" width:"600" height:"50"></div>
+    <h3>Tafari's Creative Projects</h3>
+    <p>I constantly find new hobbies and activities to give my attention to. Over winter holiday, I learned how to make rugs!</p>
+    <!--hobby section-->
+            <div id="tafari_hobbies">
+                <h2>Tafari's Hobbies</h2>
+                    </p>
+                        <ul>
+                            <li>Skateboarding</li>
+                            <li>Painting</li>
+                            <li>Hiking</li>
+                            <li>Guitar</li>
+                            <li>Film Photography</li>
+                        </ul>
+            </div>
+              <!--back home button-->
+                      <h2 id="home_button"><a href="../index.html">Back to Home</a></h2>
+                   </body>
+              </html>
